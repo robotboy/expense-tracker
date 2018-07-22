@@ -1,3 +1,7 @@
+1.0.3
+----
+ * Add Heroku deployment job config to .circleci/config.yml
+
 1.0.2
 ----
  * Add .circleci/config.yml to integrate with CircleCI
