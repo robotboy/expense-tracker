@@ -1,3 +1,7 @@
+1.0.2
+----
+ * Add .circleci/config.yml to integrate with CircleCI
+
 1.0.1
 ----
  * Added Bootstrap for Rails 4.1.1 
