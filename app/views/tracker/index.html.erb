@@ -6,7 +6,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Expense Tracker</title>
+  <title>Bandung Bermartabat</title>
 
   <link href="starter.css" rel="stylesheet">
 </head>
@@ -31,9 +31,9 @@
       </ul>
       <form class="form-inline my-2 my-lg-0">
         <% if user_signed_in? %>
-            <%= link_to('Logout', destroy_user_session_path, method: :delete, :class => "btn btn-danger my-2 my-sm-0") %>
+            <%= link_to('Sign out', destroy_user_session_path, method: :delete, :class => "btn btn-danger my-2 my-sm-0") %>
         <% else %>
-            <%= link_to('Login', new_user_session_path, method: :get, :class => "btn btn-light my-2 my-sm-0") %>
+            <%= link_to('Sign in', new_user_session_path, method: :get, :class => "btn btn-light my-2 my-sm-0") %>
         <% end %>
       </form>
     </div>
@@ -43,7 +43,14 @@
 <main role="main" class="container">
   <div class="starter-template">
     <h1>Bootstrap starter template</h1>
+
     
+
+    <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a
+      mostly barebones HTML document.</p>
+    <p class="lead"><span style="color: #FF0000;">Tulisan baru nih guys...!</span></p>
+
+  
   </div>
   <div style="text-align:center;">
   <ul style="display:table; margin:0 auto;">
