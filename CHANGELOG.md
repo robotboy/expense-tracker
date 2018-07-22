@@ -1,3 +1,7 @@
+1.0.4
+----
+ * Add Devise Rails
+
 1.0.3
 ----
  * Add Heroku deployment job config to .circleci/config.yml
