@@ -15,6 +15,8 @@
 # gem 'pg'
 #
 default: &default
+  username: postgres
+  password: postgres
   adapter: postgresql
   encoding: unicode
   # For details on connection pooling, see Rails configuration guide
@@ -23,6 +25,8 @@ default: &default
 
 development:
   <<: *default
+  username: postgres
+  password: postgres
   database: expense_tracker_development
 
   # The specified database role being used to connect to postgres.
@@ -57,9 +61,11 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
+  username: postgres
+  password: postgres
   database: expense_tracker_test
-  username: expense_tracker
-  password: expense_tracker_password
+  # username: expense_tracker
+  # password: expense_tracker_password
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -82,6 +88,8 @@ test:
 #
 production:
   <<: *default
+  username: postgres
+  password: postgres
   database: expense_tracker_production
-  username: expense-tracker
-  password: <%= ENV['EXPENSE_TRACKER_DATABASE_PASSWORD'] %>
+  # username: expense-tracker
+  # password: <%= ENV['EXPENSE_TRACKER_DATABASE_PASSWORD'] %>
